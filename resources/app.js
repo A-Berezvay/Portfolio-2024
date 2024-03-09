@@ -15,7 +15,17 @@ menuCloseButton.addEventListener('click', function() {
     navLinks.classList.remove('show-menu');
 });
 
+// LOADER ANIMATION
 
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader');
+
+    loader.classList.add('loader-hidden');
+
+    loader.addEventListener('transitioned', () => {
+        document.body.removeChild('loader');
+    })
+});
 
   
   

@@ -7,21 +7,6 @@ body, html{
     height: 100%;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: whitesmoke;
-}
-
-main{
-    flex: 1;
-    height: calc(90vh - 5em);
-    padding: 5em;
-}
-
-/* Header styling */
-
 header {
     display: flex;
     justify-content: space-between;
@@ -84,85 +69,6 @@ header nav ul li{
         top: 1em;
         right: 2em;
         height: 3em;
-    }
-}
-
-/* MAIN DESIGN */
-
-main section{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-main section div{
-    width: 30%;
-    height: 30%;
-}
-
-main section img{
-    border-radius: 50%;
-    width: 30%;
-    height: 30%;
-}
-
-main section div h2{
-    line-height: 50px;
-    width: 100%;
-}
-
-main section div p{
-    line-height: 25px;
-    width: 100%;
-} 
-
-@media only screen and (max-width: 1023px) {
-    main {
-        padding: 1em;
-    }
-    main section{
-        height: 100%;
-        flex-direction: column-reverse;
-    }
-
-    main section div{
-        width: auto;
-        height: auto;
-        padding: 0 80px;
-    }
-
-    main section img{
-        width: 30%;
-        height: auto;
-    }
-
-    main section div h2{
-        font-size: 2rem;
-    }
-    
-    main section div p{
-        font-size: 1.75rem;
-    } 
-}
-
-/* FOOTER STYLE */
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0;
-}
-
-footer img{
-    height: 50px;
-    margin: 0 20px;
-}
-
-@media only screen and (max-width: 1023px) {
-    footer img{
-        height: 40px;
     }
 }
 
