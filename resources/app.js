@@ -18,6 +18,7 @@ menuCloseButton.addEventListener('click', function() {
 // LOADER ANIMATION
 
 window.addEventListener('load', () => {
+    console.log('Page is loading')
     const loader = document.querySelector('.loader');
 
     loader.classList.add('loader-hidden');
@@ -27,6 +28,23 @@ window.addEventListener('load', () => {
     })
 });
 
-  
+// TYPING EFFECT ANIMATION
+
+const text = document.querySelector('.second-text');
+
+const textLoad = () => {
+    setTimeout(() => {
+        text.textContent = 'Albert';
+    }, 0);
+    setTimeout(() => {
+        text.textContent = 'a developer';
+    }, 4000);
+    setTimeout(() => {
+        text.textContent = 'a UX enthusiast';
+    }, 8000);
+}
+
+textLoad();
+setInterval(textLoad, 12000);
   
   
