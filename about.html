@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/resources/about.css">
+    <script src="https://kit.fontawesome.com/484a70a94f.js" crossorigin="anonymous"></script> <!--Font Awesome Kit-->
     <title>About | Albert Berezvay Portfolio</title>
 </head>
 <body>
@@ -11,15 +12,21 @@
         <h1>Albert Berezvay</h1>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li>Projects</li>
-                <li>Contact</li>
-                <img id="close-button" src="/resources/Icons/close-100.png" alt="Close button">
+                <li><a class="header-navigation" href="home.html">Home</a></li>
+                <li><a class="header-navigation" id="about" href="about.html">About</a></li>
+                <li><a class="header-navigation" href="#" >Projects</a></li>
+                <li><a class="header-navigation" href="#">Contact</a></li>
+                <i id="close-button" class="fa-solid fa-xmark"></i>
             </ul>
-            <img id="menu-button" src="/resources/Icons/menu-100.png" alt="Menu button">
+            <i id="menu-button" class="fa-solid fa-bars"></i>
         </nav>
     </header>
+    <section class="hero">
+        <img src="/resources/Images/Portrait.jpeg" alt="">
+    </section>
+    <section class="about">
+        <h2>What I do</h2>
+      </section>
     <span class="loader"></span>
     <script src="/resources/app.js"></script>
 </body>

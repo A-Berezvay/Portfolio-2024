@@ -7,11 +7,17 @@ body, html{
     height: 100%;
 }
 
+section{
+    height: 100vh;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
+    background-color: #010409;
+    color: white;
 }
 
 header nav ul {
@@ -19,8 +25,36 @@ header nav ul {
     display: flex;
 }
 
-header nav ul li{
+.header-navigation{
     margin: 0 1em;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.header-navigation:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.header-navigation:hover:after{
+    width: 100%;
+}
+
+#about::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
 }
 
 #menu-button,
@@ -46,7 +80,7 @@ header nav ul li{
         height: 100vh;
         width: 40%;
         line-height: 2em;
-        background-color:whitesmoke;
+        background-color: #010409;
         padding-top: 110px;
         z-index: 1;
     }
@@ -66,10 +100,45 @@ header nav ul li{
     #menu-button{
         display: block;
         position: fixed;
-        top: 1em;
-        right: 2em;
-        height: 3em;
+        top: 20px;
+        right: 20px;
+        font-size: 2em;
     }
+}
+
+.hero{
+    position: relative;
+    background-color: #7449f5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -130px; /* Aligns the divider with the bottom of the hero section */
+    left: 0;
+    width: 100%; /* Ensures the divider spans the full width of the hero section */
+    height: 150px; /* Height of the divider, adjust as needed */
+    background: aqua; /* Divider color, change as needed */
+    transform: skewY(5deg); /* Creates the diagonal effect */
+    transform-origin: top right; /* Ensures the skew does not affect the positioning */
+}
+
+.hero img{
+    height: 80%;
+}
+
+.about{
+background-color: aqua;
+display: flex;
+justify-content: center;
+}
+
+.about h2{
+    position: relative;
 }
 
 /* LOADER */
