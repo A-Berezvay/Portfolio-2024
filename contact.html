@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/contact.css"> <!--Link CSS file-->
+    <script src="https://kit.fontawesome.com/484a70a94f.js" crossorigin="anonymous"></script>
+    <title>Contact | Albert Berezvay's Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Albert Berezvay</h1>
+        <nav>
+            <ul>
+                <li><a class="header-navigation" href="home.html">Home</a></li>
+                <li><a class="header-navigation" id="about" href="about.html">About</a></li>
+                <li><a class="header-navigation" href="#" >Projects</a></li>
+                <li><a class="header-navigation" href="#">Contact</a></li>
+                <i id="close-button" class="fa-solid fa-xmark"></i>
+            </ul>
+            <i id="menu-button" class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Joe Doe" required>
+            <br>
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="joedoe@email.com" required>                    <br>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Create a stunning website" required>
+            <br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="8" cols="40" placeholder="Message" required></textarea>                    <br>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <span class="loader"></span>
+    <script src="/resources/app.js"></script>
+</body>
+</html>
