@@ -128,7 +128,7 @@ header nav ul {
 .about-me{
     display: flex;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 50vh;
     position: relative;
     background-color: aqua;
 }
@@ -138,57 +138,21 @@ header nav ul {
     flex-direction: column;
     align-items: center;
     width: 50%;
+    padding: 3em 5em;
+}
+
+.my-journey{
+    border-right:1px solid #000000;
+    height: 50%;
+}
+
+.about-me-sections h2{
+    margin-bottom: 2em;
 }
 
 .skills{
     font-size: 2em;
     position: relative;
-}
-
-/* CERTIFICATES */
-
-.certificates{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.slider{
-    width: 600px;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
-
-.slider-img{
-    width: 100%;
-    height: auto;
-    position: absolute;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.slider-img.active{
-    z-index: 2;
-    opacity: 1;
-    transform: scale(1.1);
-}
-
-.certificates button{
-    position: absolute;
-    z-index: 3;
-    transform: translateY(50%);
-}
-
-#prevBtn{
-    left: 20px;
-}
-
-#nextBtn{
-    right: 20px;
 }
 
 /* "WHAT I DO" SECTION */
@@ -208,27 +172,42 @@ header nav ul {
 
 .offers{
     position: relative;
-    border: 1px black solid;
     display: flex;
     align-items: center;
-    width: 50%;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .features{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px black solid;
-    width: 100%;
+    width: 25%;
     height: 100%;
 }
 
+.icon-holder{
+    border-bottom: 1px black solid;
+    width: 80%;
+    height: 3em;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-solid{
+    font-size: 2em;
+}
+
 .features-content{
-    padding: 20px 10px;
+    padding: 2em 1.5em;
+    height: 100%;
 }
 
 .features h3{
     text-align: center;
+    margin-bottom: 1em;
 }
 
 /* LOADER */
