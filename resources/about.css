@@ -100,27 +100,17 @@ header nav ul {
 
 .hero{
     position: relative;
-    background-color: #7449f5;
+    background-color: #0c1628;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-}
-
-.hero::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -130px; /* Aligns the divider with the bottom of the hero section */
-    left: 0;
-    width: 100%; /* Ensures the divider spans the full width of the hero section */
-    height: 150px; /* Height of the divider, adjust as needed */
-    background: aqua; /* Divider color, change as needed */
-    transform: skewY(5deg); /* Creates the diagonal effect */
-    transform-origin: top right; /* Ensures the skew does not affect the positioning */
+    height: 80vh;
 }
 
 .hero img{
     height: 80%;
+    position: relative;
+    right: 15em;
 }
 
 /* MY JOURNEY SECTION */
@@ -128,9 +118,11 @@ header nav ul {
 .about-me{
     display: flex;
     justify-content: space-evenly;
-    height: 50vh;
     position: relative;
-    background-color: aqua;
+    background-color: #010409;
+    color: #ffffff;
+    padding: 5em 0;
+    height: 80vh;
 }
 
 .about-me-sections{
@@ -142,8 +134,8 @@ header nav ul {
 }
 
 .my-journey{
-    border-right:1px solid #000000;
-    height: 50%;
+    border-right:1px solid #ffffff;
+    height: 100%;
 }
 
 .about-me-sections h2{
@@ -159,7 +151,9 @@ header nav ul {
 
 
 .my-work{
-    background-color: aqua;
+    height: 50vh;
+    background-color: #010409;
+    color: #ffffff;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -187,7 +181,7 @@ header nav ul {
 }
 
 .icon-holder{
-    border-bottom: 1px black solid;
+    border-bottom: 1px white solid;
     width: 80%;
     height: 3em;
     padding: 2em;
