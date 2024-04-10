@@ -41,12 +41,28 @@ const textLoad = () => {
         text.textContent = 'a developer';
     }, 4000);
     setTimeout(() => {
-        text.textContent = 'a UX enthusiast';
+        text.textContent = 'a UX designer';
     }, 8000);
 }
 
 textLoad();
 setInterval(textLoad, 12000);
+
+// SCROLLING ANIMATION
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
 
   
   

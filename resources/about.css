@@ -8,6 +8,10 @@ body, html{
     background-color: black;
 }
 
+h2{
+    margin: 3em 0;
+}
+
 /* FONT AND BUTTON STYLE */
 
 h1, h2, h3, h4, h5, h6, b {
@@ -45,19 +49,30 @@ button:hover{
     border: 1px solid #ffffff;
 }
 
-section{
-    height: 100vh;
+/* JAVASCRIPT CLASSES*/
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 /* HEADER */
 
 header {
     position:fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
-    background-color: transparent;
     color: white;
     z-index: 1;
 }
@@ -166,7 +181,6 @@ header nav ul {
     background-color: #010409;
     color: #ffffff;
     padding: 5em 0;
-    height: 80vh;
 }
 
 .about-me-sections{
@@ -186,22 +200,79 @@ header nav ul {
     margin-bottom: 2em;
 }
 
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2em;
+  }
+
 .skills{
     font-size: 2em;
     position: relative;
+}
+
+.skills:nth-child(1) {
+    transition-delay: 0;
+}
+
+.skills:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.skills:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.skills:nth-child(5) {
+    transition-delay: 200ms;
+}
+
+.skills:nth-child(6) {
+    transition-delay: 400ms;
+}
+
+.skills:nth-child(8) {
+    transition-delay: 200ms;
+}
+
+.skills:nth-child(9) {
+    transition-delay: 400ms;
+}
+
+@media only screen and (max-width: 800px) {
+    .about-me{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-journey{
+        border-bottom:1px solid #ffffff;
+        border-right: 0;
+    }
+
+    .about-me-sections{
+        padding: 2em 2em;
+        width: 70%;
+    }
+
+    .skill-grid{
+        gap: 4em;
+    }
 }
 
 /* "WHAT I DO" SECTION */
 
 
 .my-work{
-    height: 50vh;
     background-color: #010409;
     color: #ffffff;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
     }
     
 .my-work h2{
@@ -222,6 +293,14 @@ header nav ul {
     align-items: center;
     width: 25%;
     height: 100%;
+}
+
+.features:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.features:nth-child(3) {
+    transition-delay: 400ms;
 }
 
 .icon-holder{
@@ -248,6 +327,21 @@ header nav ul {
     margin-bottom: 1em;
 }
 
+@media only screen and (max-width: 800px) {
+    .my-work{
+        height: auto;
+    }
+
+    .offers{
+        flex-direction: column;
+    }
+
+    .features{
+        width: 50%;
+        margin: 1em 0;
+    }
+}
+
 /* CONTACT ME */
 
 .contact-me{
@@ -255,7 +349,6 @@ header nav ul {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 50vh;
 }
 
 /* FOOTER STYLE */
