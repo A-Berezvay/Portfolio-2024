@@ -5,24 +5,68 @@
 
 body, html{
     height: 100%;
+    background-color: black;
+}
+
+/* FONT AND BUTTON STYLE */
+
+h1, h2, h3, h4, h5, h6, b {
+    color: white;
+    font-family:  "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+b{
+    color: aqua;
+}
+
+p, a {
+    font-family: "Cambo", serif;
+    font-weight: 400;
+    line-height: 1.75em;
+}
+
+button {
+    font-family: "Cambo", serif;
+    font-weight: 400;
+    position: relative;
+    margin: 0 1em;
+    padding: 0.5em 1em;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: all 0.5s;
+}
+
+button:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 section{
     height: 100vh;
 }
 
+/* HEADER */
+
 header {
+    position:fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
-    background-color: #010409;
+    background-color: transparent;
     color: white;
+    z-index: 1;
 }
 
 header nav ul {
     list-style-type: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-navigation{
@@ -203,6 +247,40 @@ header nav ul {
     text-align: center;
     margin-bottom: 1em;
 }
+
+/* CONTACT ME */
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+}
+
+/* FOOTER STYLE */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2em 0;
+    background-color: #010409;
+}
+
+footer .fa-brands{
+    color: white;
+    font-size: 2em;
+    margin: 0 20px;
+}
+
+@media only screen and (max-width: 1023px) {
+    footer img{
+        height: 40px;
+    }
+}
+
 
 /* LOADER */
 

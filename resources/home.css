@@ -3,19 +3,46 @@
     box-sizing: border-box;
 }
 
-h1 {
-    cursor: default;
-}
-
 body, html{
     height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, b {
+    color: white;
+    font-family:  "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+p, span, a {
+    font-family: "Cambo", serif;
+    font-weight: 400;
+    line-height: 1.75em;
+}
+
+button {
+    font-family: "Cambo", serif;
+    font-weight: 400;
+    position: relative;
+    margin: 0 1em;
+    padding: 0.5em 1em;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: all 0.5s;
+}
+
+button:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: whitesmoke;
+    background-color: black;
 }
 
 main{
@@ -40,6 +67,8 @@ header {
 header nav ul {
     list-style-type: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-navigation{
