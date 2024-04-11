@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: seashell;
+}
+
+body {
+    background-color: black;
+}
+
+/* Header */
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    border-bottom: 1px seashell solid;
+    position: fixed;
+    width: 100%;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+    color: seashell;
+}
+
+header ul li{
+    color: seashell;
+    display: inline;
+    margin: 0 10px;
+    text-decoration: underline;
+}
+
+header ul li a:hover {
+    color: blue;
+}
+
+@media only screen and (max-width: 480px) {
+
+    header {
+        justify-content: center;
+    }
+
+    header ul li{
+        display: none;
+    }
+}
+
+/* Mission */
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-background {
+    background-image: url(//resources/Tea\ Cozy/Resources/images/img-mission-background.jpg);
+    height: 700px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-display {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    color: seashell;
+    width: 100%;
+    padding: 30px 0;
+}
+
+/* Tea of the month*/
+
+.tea-of-the-month h2,
+.tea-of-the-month h4 {
+    margin: 10px 0;
+}
+
+.tea-of-the-month {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.tea-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+
+.teas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    padding: 5px;
+}
+
+.teas:hover {
+    scale: 1.1;
+}
+
+.tea-display img {
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .tea-display {
+        flex-direction: column;
+        width: auto;
+    }
+}
+
+/* Locations */
+
+.background1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background1 h2 {
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.locations-background {
+    background-image: url(/Resources/Images/Tea-Cozy/images/img-locations-background.jpg);
+    height: 500px;
+    width: 1200px;
+    background-repeat: no-repeat;
+    background-size:auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.locations-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.locations {
+    background-color: black;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.3s ease-in;
+}
+
+.locations:hover {
+    scale: 1.1;
+}
+
+.locations-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .background1{
+        height: 100vh;
+    }
+
+    .locations {
+        height: 100px;
+    }
+
+    .locations-display{
+        height: 700px;
+        flex-direction: column;
+    }
+
+    .locations-background {
+        height: 100vh;
+        justify-content: space-around;
+    }
+}
+
+/* Info */
+
+.info {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Footer */
+
+footer p {
+    text-align: left;
+    margin: 20px 10px;
+}
+
+i {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #0037CC;
+    padding: 25px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+
+i:hover {
+    scale: 1.1;
+}

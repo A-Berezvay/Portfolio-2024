@@ -171,10 +171,16 @@ header nav ul {
 
 .display-items{
     border: 1px solid #ffffff;
-    height: 80%;
-    width: 25%;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
 }
 
+.display-items img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 
 /* FOOTER STYLE */
