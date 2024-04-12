@@ -59,7 +59,7 @@ header ul li a:hover {
 }
 
 .intro-background {
-    background-image: url(//resources/Tea\ Cozy/Resources/images/img-mission-background.jpg);
+    background-image: url(/resources/TeaCozy/Resources/images/img-mission-background.jpg);
     height: 700px;
     width: 1200px;
     display: flex;
@@ -98,7 +98,7 @@ header ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 1000px;
+    width: 100%;
 }
 
 .teas {
@@ -142,10 +142,11 @@ header ul li a:hover {
 }
 
 .locations-background {
-    background-image: url(/Resources/Images/Tea-Cozy/images/img-locations-background.jpg);
+    background-image: url(/resources/TeaCozy/Resources/images/img-locations-background.jpg);
     height: 500px;
-    width: 1200px;
-    background-repeat: no-repeat;
+    width: 100%;
+    background-repeat: repeat;
+    object-fit: contain;
     background-size:auto;
     display: flex;
     align-items: center;
@@ -181,7 +182,7 @@ header ul li a:hover {
     width: 100%;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 650px) {
 
     .background1{
         height: 100vh;
