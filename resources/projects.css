@@ -151,7 +151,7 @@ header nav ul {
     }
 }
 
-/* HTML & CSS DISPLAY */
+/* PROJECT DISPLAY */
 
 .display{
     height: 100vh;
@@ -182,6 +182,50 @@ header nav ul {
     object-fit: cover;
 }
 
+/* CALCULATOR */
+
+#calculator{
+    height: 300px;
+    padding: 15px;
+}
+
+#calc-display{
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: aqua;
+    color: #000000;
+    font-weight: bold;
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 25px;
+}
+
+/* TO-DO LIST */
+
+#todo-container{
+    height: 300px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#todo-container h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#todo-container input[type="text"] {
+    margin-bottom: 20px;
+}
+
+#todo-list li{
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
 
 /* FOOTER STYLE */
 
