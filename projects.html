@@ -26,23 +26,24 @@
     </header>
     <main>
         <section class="display">
-            <h2>HTML & CSS</h2>
+            <h2 class="hidden">HTML & CSS</h2>
             <div class="display-frame">
-                <a href="/resources/Colmar Academy/index-colmar_academy.html" target="_blank">
-                    <div class="display-items"><img src="/resources/Colmar Academy/Resources/images/thesis-fisma.jpg" alt=""></div>
-                </a>
-                <a href="/resources/TeaCozy/tea-cozy.html" target="_blank">
-                    <div class="display-items"><img src="/resources/TeaCozy/Resources/images/img-spiced-rum.jpg" alt=""></div>
-                </a>
-                <a href="#" target="_blank">
-                    <div class="display-items"><img src="/resources/fotomatic_broken/resources/images/feature-1.png" alt=""></div>
-                </a>
+                    <div class="display-items hidden">
+                        <a href="/resources/Colmar Academy/index-colmar_academy.html" target="_blank"><img src="/resources/Colmar Academy/Resources/images/thesis-fisma.jpg" alt=""></a>
+                    </div>
+                    <div class="display-items hidden">
+                        <a href="/resources/TeaCozy/tea-cozy.html" target="_blank"><img src="/resources/TeaCozy/Resources/images/img-spiced-rum.jpg" alt=""></a>
+                    </div>
+                    <div class="display-items hidden">
+                        <a href="#" target="_blank"><img src="/resources/fotomatic_broken/resources/images/feature-1.png" alt=""></a>
+                    </div>
+                
             </div>
         </section>
         <section class="display">
-            <h2>JavaScript</h2>
+            <h2 class="hidden">JavaScript</h2>
             <div class="display-frame">
-                <div class="display-items" id="calculator">
+                <div class="display-items hidden" id="calculator">
                     <input type="text" id="calc-display" disabled>
                     <div class="keys">
                         <button onclick="addToDisplay('7')">7</button>
@@ -63,13 +64,13 @@
                         <button onclick="addToDisplay('/')">/</button>
                     </div>
                 </div>
-                <div class="display-items" id="todo-container">
+                <div class="display-items hidden" id="todo-container">
                     <h3>To-Do List</h3>
                     <input type="text" id="todo-input" placeholder="Add new task">
                     <button id="add-button">Add Task</button>
                     <ul id="todo-list"></ul>
                 </div>
-                <div class="display-items">
+                <div class="display-items hidden">
                     <h3>Weather App</h3>
                     <input type="text" id="cityInput" placeholder="Enter city name">
                     <button onclick="getWeather()">Get Weather</button>
