@@ -17,6 +17,7 @@ p, span, a {
     font-family: "Cambo", serif;
     font-weight: 400;
     line-height: 1.75em;
+    text-decoration: none;
 }
 
 button {
@@ -117,8 +118,11 @@ header nav ul {
         width: 40%;
         line-height: 2em;
         background-color: #010409;
-        padding-top: 110px;
         z-index: 1;
+    }
+
+    header nav ul li{
+        margin: 1.3em 0;
     }
 
     header nav ul.show-menu{
@@ -139,6 +143,11 @@ header nav ul {
         top: 20px;
         right: 20px;
         font-size: 2em;
+    }
+
+    button{
+        font-size: 1.5rem;
+        border-radius: 35px;
     }
 }
 
